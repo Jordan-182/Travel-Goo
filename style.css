@@ -1,0 +1,14 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --accent-color: #32df8f;
+    --btn-primary-color:#666666 ;
+    --btn-secondary-color:#00a651 ;
+    --background-primary-color: #e5e5e5;
+    --background-secondary-color: #ecf1f0;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
