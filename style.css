@@ -20,7 +20,9 @@ a{
 }
 
 .header{
-    background: url(img/header-bg.jpg) center center / cover no-repeat; 
+    background: 
+      linear-gradient(180deg, rgba(0,0,0,0.81) 0%, transparent 31%, transparent 78%, rgba(255,255,255,1) 90%),
+      url(img/header-bg.jpg) center center / cover no-repeat; 
     color: var(--primary-color);
     display: flex;
     flex-direction: column;
@@ -32,7 +34,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0;
+    margin: 20px 0 10px 0;
 }
 
 .logo{
@@ -46,20 +48,24 @@ a{
 }
 
 .nav-links a{
-    margin: 0 10px;
+    margin: 0 20px;
     font-size: 1rem;
+}
+
+.nav-icons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 .landing-block{
     margin-top: 200px;
-    display: flex;
-    flex-direction: column;
     text-align: center;
 }
 
 .landing-title{
     font-weight: bolder;
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 1.2em;
     margin-bottom: 50px;
 }
@@ -70,5 +76,57 @@ a{
 
 .more{
     background-color: var(--btn-secondary-color);
-    display: block;
+    display: inline-block;
+    margin-bottom: 250px;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: 0.2s ease-out;
+}
+
+.more:hover{
+    background: #005F15;
+}
+
+.block-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 63px;
+}
+
+.services-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 90px;
+}
+
+.services-item{
+    height: 174px;
+    width: 312px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 35px 35px 0 35px;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+.services-item:hover,
+.services-item.active{
+    background: var(--primary-color);
+    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.15);
+}
+
+.services-img{
+    margin-bottom: 25px;
+    height: 45px;
+    width: 45px;
+}
+
+.item-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
