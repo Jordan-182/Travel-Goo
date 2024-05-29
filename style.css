@@ -99,6 +99,7 @@ a{
 .services-container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 40px;
     margin-bottom: 90px;
 }
@@ -129,4 +130,61 @@ a{
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 20px;
+}
+
+.map-block {
+    background:
+      url(img/map.png) center center / contain no-repeat,
+      rgba(0,88,83,0.05);
+    text-align: center;
+    padding-bottom: 113px;
+    background-size: 70%;
+}
+
+.map-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding-top: 80px;
+}
+
+.map-container{
+    display: flex;
+    width: calc(100% - 350px);
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.map-item{
+    font-size: 1.1rem;
+    background: var(--primary-color);
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.map-item:hover{
+    background: #f9f9f9;
+    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.15);
+}
+
+.map-item-title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.map-img{
+    width: 35px;
+    height: 35px;
+    margin: 40px auto;
 }
