@@ -76,6 +76,7 @@ a{
 
 .more{
     background-color: var(--btn-secondary-color);
+    color: #ffffff;
     display: inline-block;
     margin-bottom: 250px;
     padding: 14px 24px;
@@ -195,14 +196,14 @@ a{
     background: url(img/map2.png) left 0  top 80px / contain no-repeat;
     background-size: 40%;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
 }
 
 .destination-container{
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     gap: 40px;
-    margin-top: 80px;
     margin-right: 80px;
     padding-bottom: 50px;
 }
@@ -233,10 +234,94 @@ a{
 
 .packages-block{
     background: var(--background-secondary-color);
+    padding-top: 50px;
+    text-align: center;
+}
+
+.packages-block .more{
+    margin-bottom: 100px;
 }
 
 .packages-nav{
     display: flex;
     justify-content: center;
     gap: 50px;
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+}
+
+.packages-btn{
+    background-color: var(--btn-primary-color);
+    color: #ffffff;
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: 0.2s ease-out;
+}
+
+.packages-btn:hover,
+.packages-btn.active{
+    background: var(--btn-secondary-color);
+}
+
+.packages-container{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding-bottom: 90px;
+}
+
+.packages-card{
+    width: 290px;
+    height: 350px;
+    background: #ffffff;
+    border-radius: 10px;
+    flex: none;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.packages-card:hover{
+    transform: scale(1.01);
+}
+
+.card-block{
+    transform: translateY(-80px);
+    background: #ffffff;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+}
+
+.card-header{
+    display: flex;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card-header span{
+    margin-left: auto;
+}
+
+.card-body{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.card-footer{
+    display: flex;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.card-footer a{
+    margin-left: auto;
+    text-decoration: underline;
+    font-size: 0.8rem;
 }
